@@ -5,10 +5,10 @@ function [J, grad] = dlCostFunctionNew(nn_params, ...
                                    result, ...
                                    X, y, lambda)
 
-% Setup some useful variables
+% Number of elements in the training set data 
 m = size(X, 1);
 %
-% % You need to return the following variables correctly
+% Initializing cost to null
 J = 0;
 
 Theta1 = reshape(nn_params(1:hidden * (input + 1)), ...
